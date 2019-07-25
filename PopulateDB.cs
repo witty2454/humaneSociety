@@ -11,12 +11,12 @@ namespace HumaneSociety
         HumaneSocietyDataContext db = new HumaneSocietyDataContext();
         Employee steveEmployee = new Employee
         {
-            employeeNumber = 1,
-            email = "stephen@gmail.com",
-            firsttName = "Stephen",
-            lastName = "White",
-            pass = "goober",
-            userName = "Stevo",
+            EmployeeNumber = 1,
+            Email = "stephen@gmail.com",
+            FirstName = "Stephen",
+            LastName = "White",
+            Password = "goober",
+            UserName = "Stevo",
         };
        
         public PopulateDB()

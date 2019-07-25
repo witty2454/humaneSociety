@@ -120,7 +120,7 @@ namespace HumaneSociety
             bool isFinished = false;
             Console.Clear();
             while(!isFinished){
-                List<string> options = new List<string>() { "Animal found:", animal.name, animal.Breed1.Catagory1.catagory1, animal.Breed1.breed1, animal.Breed1.pattern, "Would you like to:", "1. Get Info", "2. Update Info", "3. Check shots", "4. Return" };
+                List<string> options = new List<string>() { "Animal found:", animal.N, animal.Breed1.Catagory1.catagory1, animal.Breed1.breed1, animal.Breed1.pattern, "Would you like to:", "1. Get Info", "2. Update Info", "3. Check shots", "4. Return" };
                 UserInterface.DisplayUserOptions(options);
                 int input = UserInterface.GetIntegerData();
                 if (input == 4)
@@ -212,7 +212,7 @@ namespace HumaneSociety
         private IQueryable<Animal> SearchForAnimal(int iD)
         {
             HumaneSocietyDataContext context = new HumaneSocietyDataContext();
-             var animals = (from data in context.Animals where data.ID == iD select data);
+             var animals = (from data in context.Animals where data.AnimalId == iD select data);
             return animals;
         }
 
@@ -234,7 +234,7 @@ namespace HumaneSociety
                 return;
             }
             var animal = animals[0];
-            List<string> options = new List<string>() { "Animal found:", animal.name, animal.Breed1.breed1, "would you like to delete?" };
+            List<string> options = new List<string>() { "Animal found:", animal.Name, animal.Breed1.breed1, "would you like to delete?" };
             if ((bool)UserInterface.GetBitData(options))
             {
                 Query.RemoveAnimal(animal);
@@ -245,13 +245,13 @@ namespace HumaneSociety
             Console.Clear();
             Animal animal = new Animal();
             animal.breed = AddBreed();
-            animal.name = UserInterface.GetStringData("name", "the animal's");
-            animal.age = UserInterface.GetIntegerData("age", "the animal's");
-            animal.demeanor = UserInterface.GetStringData("demeanor", "the animal's");
-            animal.kidFriendly = UserInterface.GetBitData("the animal", "child friendly");
-            animal.petFriendly = UserInterface.GetBitData("the animal", "pet friendly");
-            animal.weight = UserInterface.GetIntegerData("the animal", "the weight of the");
-            animal.diet = AddDiet();
+            animal.Name = UserInterface.GetStringData("name", "the animal's");
+            animal.Age = UserInterface.GetIntegerData("age", "the animal's");
+            animal.Demeanor = UserInterface.GetStringData("demeanor", "the animal's");
+            animal.KidFriendly = UserInterface.GetBitData("the animal", "child friendly");
+            animal.PetFriendly = UserInterface.GetBitData("the animal", "pet friendly");
+            animal.Weight = UserInterface.GetIntegerData("the animal", "the weight of the");
+            animal.DietPlan = AddDiet();
             animal.location = AssignLocation();
             Query.AddAnimal(animal);
         }
@@ -313,7 +313,7 @@ namespace HumaneSociety
                 UserInterface.DisplayUserOptions("Employee not found please contact your administrator");
                 PointOfEntry.Run();
             }
-            if (employee.pass != null)
+            if (employee.Password != null)
             {
                 UserInterface.DisplayUserOptions("User already in use please log in or contact your administrator");
                 LogIn();
@@ -335,7 +335,7 @@ namespace HumaneSociety
         private void GetPassword()
         {
             UserInterface.DisplayUserOptions("Please enter your password: (CaSe SeNsItIvE)");
-            employee.pass = UserInterface.GetUserInput();
+            employee.Password = UserInterface.GetUserInput();
         }
 
         private void GetUserName()
@@ -349,7 +349,7 @@ namespace HumaneSociety
             }
             else
             {
-                employee.userName = username;
+                employee.UserName = username;
                 UserInterface.DisplayUserOptions("Username successful");
             }
         }

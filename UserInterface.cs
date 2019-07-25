@@ -88,7 +88,7 @@ namespace HumaneSociety
         {
             foreach(Animal animal in animals)
             {
-                Console.WriteLine(animal.ID + " " + animal.name + " " + animal.Breed1.breed1);
+                Console.WriteLine(animal.AnimalId + " " + animal.Name + " " + animal.Breed1.breed1);
             }
         }
 
@@ -124,14 +124,14 @@ namespace HumaneSociety
 
         internal static void DisplayClientInfo(Client client)
         {
-            List<string> info = new List<string>() { client.firstName, client.lastName, client.email, "Number of kids: " + client.kids.ToString(), "Home size: " + client.homeSize.ToString(), "Income: " + client.income.ToString(), client.UserAddress1.USState.name };
+            List<string> info = new List<string>() { client.FirstName, client.LastName, client.Email, "Number of kids: " + client.kids.ToString(), "Home size: " + client.homeSize.ToString(), "Income: " + client.income.ToString(), client.Address.USState.Name};
             DisplayUserOptions(info);
             Console.ReadLine();
         }
         //issue where it will not display null information due to how the method was written
         public static void DisplayAnimalInfo(Animal animal)
         {
-            List<string> info = new List<string>() {"ID: " + animal.ID, animal.name, animal.age + "years old", "Demeanour: " + animal.demeanor, "Kid friendly: " + BoolToYesNo(animal.kidFriendly), "pet friendly: " + BoolToYesNo(animal.petFriendly), $"Location: {animal.Room.name} in {animal.Room.building}", "Weight: " + animal.weight.ToString(),  "Food amoumnt:" + animal.DietPlan.amount};
+            List<string> info = new List<string>() {"ID: " + animal.AnimalId, animal.Name, animal.Age + "years old", "Demeanour: " + animal.Demeanor, "Kid friendly: " + BoolToYesNo(animal.KidFriendly), "pet friendly: " + BoolToYesNo(animal.PetFriendly), $"Location: {animal.Rooms.name} in {animal.Rooms.building}", "Weight: " + animal.Weight.ToString(),  "Food amoumnt:" + animal.DietPlan.FoodAmountInCups};
             DisplayUserOptions(info);
             Console.ReadLine();
 
