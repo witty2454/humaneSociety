@@ -28,7 +28,7 @@ namespace HumaneSociety
 
         private static void HandleCsvAnimals(string filePath)
         {
-            var db = new HumaneSocietyDataContext();
+            var db = new HumaneSociety2DataContext();
 
             var query = File.ReadLines(filePath)
                 .SelectMany(line => line.Split(';'))

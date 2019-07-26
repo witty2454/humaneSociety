@@ -8,15 +8,15 @@ namespace HumaneSociety
 {
     class PopulateDB
     {
-        HumaneSocietyDataContext db = new HumaneSocietyDataContext();
+        HumaneSociety2DataContext db = new HumaneSociety2DataContext();
         Employee steveEmployee = new Employee
         {
-            EmployeeNumber = 1,
-            Email = "stephen@gmail.com",
-            FirstName = "Stephen",
-            LastName = "White",
-            Password = "goober",
-            UserName = "Stevo",
+            employeeNumber = 1,
+            email = "stephen@gmail.com",
+            firsttName = "Stephen",
+            lastName = "White",
+            pass = "goober",
+            userName = "Stevo",
         };
        
         public PopulateDB()

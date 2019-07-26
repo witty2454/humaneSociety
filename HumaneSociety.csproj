@@ -47,10 +47,10 @@
     <Compile Include="Admin.cs" />
     <Compile Include="CSVImporter.cs" />
     <Compile Include="Customer.cs" />
-    <Compile Include="HumaneSociety.designer.cs">
+    <Compile Include="HumaneSociety2.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>HumaneSociety.dbml</DependentUpon>
+      <DependentUpon>HumaneSociety2.dbml</DependentUpon>
     </Compile>
     <Compile Include="PointOfEntry.cs" />
     <Compile Include="PopulateDB.cs" />
@@ -68,13 +68,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="HumaneSociety.dbml">
+    <None Include="HumaneSociety2.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>HumaneSociety.designer.cs</LastGenOutput>
+      <LastGenOutput>HumaneSociety2.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="HumaneSociety.dbml.layout">
-      <DependentUpon>HumaneSociety.dbml</DependentUpon>
+    <None Include="HumaneSociety2.dbml.layout">
+      <DependentUpon>HumaneSociety2.dbml</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

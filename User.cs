@@ -45,47 +45,47 @@ namespace HumaneSociety
         }
         protected IQueryable<Animal> SearchForAnimal()
         {
-            HumaneSocietyDataContext context = new HumaneSocietyDataContext();
+            HumaneSociety2DataContext context = new HumaneSociety2DataContext();
             var animals = from data in context.Animals select data;
 
             var searchParameters = GetAnimalCriteria();
             if (searchParameters.ContainsKey(1))
             {
-                animals = (from data in animals where data.Category.Ca.catagory1 == searchParameters[1] select data);
+                animals = (from data in animals where data.Breed1.Catagory1.catagory1 == searchParameters[1] select data);
             }
             if (searchParameters.ContainsKey(2))
             {
-                animals = (from data in animals where data.Category.breed1 == searchParameters[2] select data);
+                animals = (from data in animals where data.Breed1.breed1 == searchParameters[2] select data);
             }
             if (searchParameters.ContainsKey(3))
             {
-                animals = (from data in animals where data.Name == searchParameters[3] select data);
+                animals = (from data in animals where data.name == searchParameters[3] select data);
             }
             if (searchParameters.ContainsKey(4))
             {
-                animals = (from data in animals where data.Age == int.Parse(searchParameters[4]) select data);
+                animals = (from data in animals where data.age == int.Parse(searchParameters[4]) select data);
             }
             if (searchParameters.ContainsKey(5))
             {
-                animals = (from data in animals where data.Demeanor == searchParameters[5] select data);
+                animals = (from data in animals where data.demeanor == searchParameters[5] select data);
             }
             if (searchParameters.ContainsKey(6))
             {
                 bool parameter = GetBoolParamater(searchParameters[6]);
-                animals = (from data in animals where data.KidFriendly == parameter select data);
+                animals = (from data in animals where data.kidFriendly == parameter select data);
             }
             if (searchParameters.ContainsKey(7))
             {
                 bool parameter = GetBoolParamater(searchParameters[7]);
-                animals = (from data in animals where data.PetFriendly == parameter select data);
+                animals = (from data in animals where data.petFriendly == parameter select data);
             }
             if (searchParameters.ContainsKey(8))
             {
-                animals = (from data in animals where data.Weight == int.Parse(searchParameters[8]) select data);
+                animals = (from data in animals where data.weight == int.Parse(searchParameters[8]) select data);
             }
             if (searchParameters.ContainsKey(9))
             {
-                animals = (from data in animals where data.AnimalId == int.Parse(searchParameters[9]) select data);
+                animals = (from data in animals where data.ID == int.Parse(searchParameters[9]) select data);
             }
             return animals;
         }
