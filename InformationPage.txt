@@ -1,0 +1,273 @@
+
+							Addresses																	
+
+Addresses ID : 1
+Address- 5936 W Pleasent St.
+City- daytona
+USStateID- 9
+ZipCode- 49351
+
+Addresses ID : 2
+Address- 3514 N Fatelfields Ave.
+City- Phoenix
+USStateID- 3
+ZipCode- 85613
+
+Addresses ID : 3
+Address- 1021 S Tilted St.
+City- Nashville
+USStateID- 17
+ZipCode- 37201
+
+Addresses ID : 4
+Address- 871 E Snobby St.
+City- Alanata
+USStateID- 10
+ZipCode-30309
+
+Addresses ID : 5
+Address- 1002 W Salty Springs Ave.
+City- Hilo
+USStateID- 11
+ZipCode-96720
+									Employee Info
+
+Employee: 1
+FirstName: Tony
+LastName: Stark
+UserName: IamIronman
+Password: Jarvis
+Employee#: 3000
+Email: Tony.FirstAvenger@gmail.com
+
+Employee: 2
+FirstName: Steve
+LastName:Rodgers
+UserName:CAPtian
+Password: IamWorthy
+Employee#:93
+Email:CaptianOfTheAvengers@gmail.com
+
+Employee: 3
+FirstName:Peter
+LastName:Parker
+UserName:Webby
+Password:MJ4eva
+Employee#:12345
+Email:SpidyWebs@gmail.com
+
+Employee: 4
+FirstName:Bruce
+LastName:Banner
+UserName:Dr.HulkSmash
+Password:GammaGotMe
+Employee#:948
+Email:BestAvernger7@gmail.com
+
+Employee: 5
+FirstName:Thor
+LastName:Odenson
+UserName:AsgardianMan
+Password:IamThor1
+Employee#:10378
+Email:IamSonOfOden@gmail.com
+
+								I need to Create the Client Addresses
+
+Client: 1
+fistName: Hugo
+LastName:Weaving
+UserName: RedSkull
+Password: HailHydra
+Address: null
+Email: Hydra@gmail.com
+
+Client: 2
+fistName: Trevor
+LastName: Salttery
+UserName: Mandarin
+Password: Destory&Punish
+Address: null
+Email: fakeBadGuy@gmail.com
+
+Client: 3
+fistName: Norman
+LastName: Osborn
+UserName: GreenGoblin
+Password: PowerAddict
+Address: null
+Email: GGoblin@gmail.com
+
+Client: 4
+fistName: Tom
+LastName: Hiddleson
+UserName: Loki
+Password: BecomeKing
+Address: null
+Email: FutureKingofAsgard@gmail.com
+
+
+Client: 5
+fistName: Betty
+LastName: Banner
+UserName: SheHulk
+Password: SheSmash
+Address: null
+Email: DefeatEveryone@gmail.com
+
+
+								Category types and Informatioin.
+Breed: Dog
+Name: Sophie
+Weight: 85
+Age: 2
+Demneanor: Loveing
+KidFriendly: 1 true
+PetFriendly: 1 true
+Gender: Female
+AdoptionStatus: Awaiting
+Category: 1
+Dietplan: 1
+EmployeeID: 948
+
+Breed: Lion
+Name: Simba
+Weight: 550 lbs
+Age: 3
+Demneanor: Docile
+KidFriendly: 2 False
+PetFriendly: 2 False
+Gender: Male
+AdoptionStatus: Awaiting
+Category: 3
+Dietplan:3
+EmployeeID: 12345
+
+Breed: Dragon
+Name: Toothless
+Weight: 1200 lbs
+Age: 3
+Demneanor: Friendly
+KidFriendly: 1 True
+PetFriendly: 2 False
+Gender: Male
+AdoptionStatus: Awaiting
+Category: 2
+Dietplan: 2
+EmployeeID: 93
+
+
+Breed: Demigorgon
+Name: The Monster
+Weight: 7000 lbs
+Age: Unknown
+Demneanor: Aggresive
+KidFriendly: 2 False
+PetFriendly: 2 False
+Gender: Unknown
+AdoptionStatus: Awaiting
+Category: 4
+Dietplan: 4
+EmployeeID: 3000
+
+Breed: Water Horse
+Name: Nessy
+Weight: 3000 lbs
+Age: 10000
+Demneanor: Friendly
+KidFriendly: 1 True
+PetFriendly: 1 True
+Gender: Unknown
+AdoptionStatus: Awaiting
+Category: 5
+Dietplan: 5
+EmployeeID: 10378
+
+							Diet Plans
+Name: Dragon
+Cups: 50
+FoodType: Watermelon
+
+Name: Dog
+Cups: 2
+FoodType: Blue Buffalo
+
+Name: Lions
+Cups: 40
+FoodType: Meat
+
+Name: Demigorgon
+Cups: 5
+FoodType: Human Meat
+
+Name: Water Horse
+Cups: 100
+FoodType: Fish
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
